@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Shop</title>
+</head>
+<body>
+    <section class="list-wrapper">
+        <header class="header">
+            <h1 class="title header__title">Stores list</h1>
+            <form action="#" class="searcher">
+                <input class="searcher__input js-input-header" type="text" placeholder="Search">
+                <button class="searcher__btn cancel-btn inactive-btn">
+                    <img src="/images/cancelIcon.svg" alt="#" class="icon">
+                </button>
+                <button class="searcher__btn find-btn">
+                    <img src="/images/searchIcon.svg" alt="#" class="icon">
+                </button>
+                <button class="searcher__btn refresh-btn">
+                    <img src="/images/refreshIcon.svg" alt="#" class="icon">
+                </button>
+            </form>
+            <div class="header__tools">
+                <button class="header__tools--btn">
+                    <img src="/images/collapseIcon.png" alt="#" class="icon">
+                </button>
+                <button class="header__tools--btn">
+                    <img src="/images/pinIcon.png" alt="#" class="icon">
+                </button>  
+            </div>
+        </header>
+        <aside class="aside">
+            <ul class="aside__list">
+                <li class="empty-list inactive-list">
+                    <img src="/images/emptyBox.png" alt="#" class="empty-page-icon">
+                    <span>We don't have this shop...</span>
+                </li>
+            </ul>
+        </aside>
+    
+        <footer class="footer">
+            <button class="footer__btn aside-create">
+                <img src="/images/plusIcon.png" alt="#" class="icon">
+                <span>Create</span>
+            </button>
+            
+        </footer>
+    </section>
+
+    <section class="product-wrapper">
+        <header class="header header--product">
+            <h2 class="title header__title">Store Details</h2>
+            <address class="header__info"></address>
+            <div class="header__tools">
+                <div class="line-tools"></div>
+                <button class="header__tools--btn">
+                    <img src="/images/collapseIcon.png" alt="#" class="icon">
+                </button>
+                <button class="header__tools--btn">
+                    <img src="/images/pinIcon.png" alt="#" class="icon">
+                </button>
+            </div>
+            <div class="header__filter">
+                <div class="filterbar">
+                    <button class="filterbar__btn js-filterbar__btn-all">
+                        <span class="filterbar__btn-count">100</span> 
+                        <span class="js-state-all">All</span>
+                    </button>
+                </div>
+                <div class="line-filter"></div>
+                <div class="filterbar">
+                    <button class="filterbar__btn js-filterbar__btn-ok">                     
+                        <img src="/images/checkMarkIcon.svg" alt="#" class="filter-icon" >
+                        <span class="js-state-ok filterbar__btn-amount">50</span>
+                    </button>
+                    <span class="state">Ok</span>
+                </div>
+                <div class="filterbar">
+                    <button class="filterbar__btn js-filterbar__btn-storage">            
+                        <img src="/images/warningIcon.svg" alt="#" class="filter-icon" >
+                        <span class="js-state-storage filterbar__btn-amount">30</span>
+                    </button>
+                    <span>Storage</span>
+                </div>
+                <div class="filterbar">
+                    <button class="filterbar__btn js-filterbar__btn-out">
+                        <img src="/images/errorIcon.svg" alt="#" class="filter-icon" >
+                        <span class="js-state-out filterbar__btn-amount">20</span>
+                    </button>
+                    <span>Out of stack</span>
+                </div>
+            </div>
+        </header>
+        <main class="main main__product">
+            <form action="#" class="searcher searcher-table">
+                <input class="searcher__input" type="text" placeholder="Search">
+                <button class="searcher__btn find-btn">
+                    <img src="/images/searchIcon.svg" alt="#" class="icon">
+                </button>
+            </form>
+            <table class="table">
+                <caption class="table__name">Products</caption>
+                <tr class="table__subtitles"></tr>
+            </table>
+            <div class="empty-table inactive-list">
+                
+                <img src="/images/lightIcon.png" alt="#">
+                <span>Table is empty</span>
+                
+            </div>
+        </main>
+        <footer class="footer">
+            <button class="footer__btn btn-create">
+                <img src="/images/plusIcon.png" alt="#" class="icon icon-create">
+                <span>Create</span>
+            </button>
+            <button class="footer__btn btn-delete">
+                <img src="/images/deleteIcon.svg" alt="#" class="icon icon-delete">
+                <span>Delete</span>
+            </button>
+            
+        </footer>
+    </section>
+
+    <section class="empty-product-wrapper active-wrapper">
+        <header class="header empty-page-header">
+            <h1 class="title">Store is not selected</h1>
+        </header>
+        <div class="empty-page">
+            <div class="empty-page-content">
+                <img src="/images/storeIcon.svg" alt="#" class="empty-page-icon">
+                <h1 class="title">Store is not selected</h1>
+                <span>Please select the store to proceed</span>
+            </div>
+
+        </div>
+    </section>
+    <div class="popup-wrapper inactive-list">
+        
+        <form class="popup">
+            <div class="popup__content"></div>
+            <div class="popup__btns">
+                <button class="popup-btn popup-cancel">Cancel</button>
+            </div>
+        </form>
+       
+    </div>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
